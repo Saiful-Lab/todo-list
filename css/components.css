@@ -1,0 +1,7 @@
+/* aria-controls is a toggle extention of html */
+
+.container {
+    padding: var(--px-l);
+    background-color: var(--clr-background);
+    border-radius: var(--px-m);
+}
