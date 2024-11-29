@@ -1,7 +1,99 @@
-/* aria-controls is a toggle extention of html */
+.aside-container {
+  background-color: var(--clr-background);
+  /* padding: var(--px-m); */
+  width: 20%;
+}
+
+.task-container {
+  background-color: var(--clr-background);
+  /* padding: var(--px-m); */
+  width: 80%;
+}
+
+/* When text is overflow */
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 .container {
-    padding: var(--px-l);
-    background-color: var(--clr-background);
-    border-radius: var(--px-m);
+  margin: var(--px-xl) auto;
+  max-width: 60rem;
+  border-radius: var(--px-s);
+  text-align: center;
+}
+
+li {
+  padding: var(--px-m);
+}
+li:not(:last-child) {
+  border-bottom: 1px solid var(--clr-outline);
+}
+
+/* Mobile styles */
+@media (max-width: 34.9375rem) {
+  .container {
+    margin: 0;
+    border-radius: 0;
+    padding-bottom: 8rem;
+  }
+
+  .task-container {
+    width: 100%;
+    margin-top: -4rem;
+    margin-inline: 2rem;
+  }
+}
+
+/* Tablet styles */
+@media (min-width: 35rem) and (max-width: 59.9375rem) {
+  .container {
+    margin: 0;
+    border-radius: 0;
+    padding-bottom: 8rem;
+  }
+}
+
+/* Checkbox */
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.p {
+  font-size: 1.25rem;
+}
+input[type="checkbox"] {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  background-color: var(--clr-primary);
+  border-radius: var(--px-xs);
+  cursor: pointer;
+  appearance: none;
+}
+input[type="checkbox"]:checked {
+  background-color: var(--clr-primary);
+}
+input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 8px;
+  width: 8px;
+  height: 13px;
+  border: 3px solid transparent;
+  border-left: none;
+  border-top: none;
+  transform: rotate(45deg) scale(1);
+}
+input[type="checkbox"]:checked::before {
+  border-color: var(--clr-background);
+  animation: checkboxAnim 0.2s ease;
+}
+@keyframes checkboxAnim {
+  from {
+    transform: rotate(45deg) scale(0);
+  }
 }

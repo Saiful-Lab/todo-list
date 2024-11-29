@@ -100,3 +100,17 @@ textarea:not([rows]) {
     scroll-behavior: auto !important;
   }
 }
+
+h1,
+aside,
+section,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style-type: none;
+}
