@@ -49,7 +49,7 @@
   --px-xl: 28px;
 
   /* Font-Sizes */
-  --fs-900: 9.375rem;
+  --fs-20:  1.25rem;
 
   /* Font-Families */
   --ff-serif: "Bellefair", serif;
@@ -284,6 +284,9 @@ body {
 .margin-xl {
   margin: var(--px-xl);
 }
+.margin-bottom-l{
+  margin-bottom: var(--px-l);
+}
 
 /* Padding */
 .padding-xs {
@@ -300,6 +303,23 @@ body {
 }
 .padding-xl {
   padding: var(--px-xl);
+}
+
+/* Position */
+.absolute{
+  position: absolute;
+}
+.relative{
+  position: relative;
+}
+.static{
+  position: static;
+}
+.fixed{
+  position: fixed;
+}
+.sticky{
+  position: sticky;
 }
 
 /* Hide Element */
@@ -362,8 +382,8 @@ body {
 }
 
 /* Font Size */
-.fs-900 {
-  font-size: var(--fs-900);
+.fs-20 {
+  font-size: var(--fs-20);
 }
 
 .fs-900,
