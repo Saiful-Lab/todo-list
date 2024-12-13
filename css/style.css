@@ -49,7 +49,7 @@
   --px-xl: 28px;
 
   /* Font-Sizes */
-  --fs-20:  1.25rem;
+  --fs-20: 1.25rem;
 
   /* Font-Families */
   --ff-serif: "Bellefair", serif;
@@ -162,6 +162,9 @@ body {
   background-color: var(--clr-info-container);
   color: var(--clr-on-info-container);
 }
+.bg-background {
+  background-color: var(--clr-background);
+}
 
 /* Text Color */
 .text-on-surface {
@@ -240,6 +243,10 @@ body {
   gap: var(--gap, 1rem);
 }
 
+.flex-grow {
+  flex-grow: 1;
+}
+
 .grid {
   display: grid;
   gap: var(--gap, 1rem);
@@ -284,8 +291,11 @@ body {
 .margin-xl {
   margin: var(--px-xl);
 }
-.margin-bottom-l{
+.margin-bottom-l {
   margin-bottom: var(--px-l);
+}
+.margin-top-l {
+  margin-top: var(--px-l);
 }
 
 /* Padding */
@@ -306,19 +316,19 @@ body {
 }
 
 /* Position */
-.absolute{
+.absolute {
   position: absolute;
 }
-.relative{
+.relative {
   position: relative;
 }
-.static{
+.static {
   position: static;
 }
-.fixed{
+.fixed {
   position: fixed;
 }
-.sticky{
+.sticky {
   position: sticky;
 }
 

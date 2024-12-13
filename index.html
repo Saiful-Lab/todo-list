@@ -14,26 +14,10 @@
     <title>Task List</title>
   </head>
   <body>
-    <!-- <div class="container">
-      <h4>Task List</h4>
-      form new task
-      <form id="form">
-        <input type="text" id="new-task" placeholder="New Task" />
-        <input type="submit" value="add task" />
-      </form>
-      <hr />
-      <h4>Tasks</h4>
-      filter task input
-      <input type="text" id="task-filter" placeholder="Filter Task" />
-      task list show
-      <ul id="tasks-list"></ul>
-      clear task button
-      <button id="clear-task">clear task</button>
-    </div> -->
-
     <header class="container bg-primary padding-xl">
       <h1>Task List</h1>
     </header>
+
     <main class="container">
       <section>
         <form id="form" class="flex margin-bottom-l">
@@ -45,66 +29,26 @@
           />
           <input type="submit" class="fs-20 capitalize" value="add task" />
         </form>
-        <div class="input-group relative">
-          <input
-            type="text"
-            id="task-filter"
-            placeholder="Filter Task"
-            class="fs-20 margin-bottom-l"
-          />
-          <span class="material-symbols-outlined absolute">filter_alt</span>
+        <div class="flex margin-bottom-l">
+          <div class="input-group relative flex-grow">
+            <input
+              type="text"
+              id="task-filter"
+              placeholder="Filter Task"
+              class="fs-20"
+            />
+            <span class="material-symbols-outlined absolute">filter_alt</span>
+          </div>
+          <button id="clear-task" class="fs-20 btn capitalize border-radius-xs">
+            Clear Task
+          </button>
         </div>
       </section>
-      <div class="flex">
-        <aside class="aside-container border-radius-s sr-only-m">
-          <ul class="text-start">
-            <li class="ellipsis">Lorem ipsum dolor sit.</li>
-            <li class="ellipsis">Lorem ipsum dolor sit.</li>
-            <li class="ellipsis">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo?
-            </li>
-          </ul>
-        </aside>
-        <section class="border-radius-s task-container">
-          <ol class="text-start">
-            <li class="checkbox">
-              <input type="checkbox" id="1" name="1" value="1" />
-              <div class="checkmark"></div>
-              <label for="1" class="fs-20">Lorem ipsum dolor sit amet.</label>
-            </li>
-            <li class="checkbox">
-              <input type="checkbox" id="2" name="2" value="2" />
-              <div class="checkmark"></div>
-              <label for="2" class="fs-20"
-                >Lorem ipsum dolor sit amet consectetur.</label
-              >
-            </li>
-            <li class="checkbox">
-              <input type="checkbox" id="3" name="3" value="3" />
-              <div class="checkmark"></div>
-              <label for="3" class="fs-20">Lorem ipsum dolor sit.</label>
-            </li>
-            <li class="checkbox">
-              <input type="checkbox" id="4" name="4" value="4" />
-              <div class="checkmark"></div>
-              <label for="4" class="fs-20"
-                >Lorem ipsum dolor sit amet consectetur.</label
-              >
-            </li>
-            <li class="checkbox">
-              <input
-                checked="checked"
-                type="checkbox"
-                id="5"
-                name="5"
-                value="5"
-              />
-              <div class="checkmark"></div>
-              <label for="5" class="fs-20">Lorem ipsum dolor sit amet.</label>
-            </li>
-          </ol>
-        </section>
-      </div>
+      <section>
+        <h1 class="title bg-primary-container border-radius-s">Task</h1>
+        <ul id="tasks-list"></ul>
+        <ol id="tasks-list" class="text-start"></ol>
+      </section>
     </main>
 
     <script src="script.js"></script>
